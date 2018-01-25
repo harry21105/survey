@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap Agency Template</title>
+
+		
+			
+			<!-- fileUpload -->
+		<link rel="stylesheet" href="css/fileUpload.css">
+		<script src="js/fileUpload.js"></script>
+		
+		
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300">
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<link rel="stylesheet" href="css/return_to_top.css">
+		<script src="js/content.js"></script>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="return_to_top.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+    <style>
+.fa-2x {
+	font-size: 2em;
+}
+.fa {
+	position: relative;
+	display: table-cell;
+	width: 60px;
+	height: 36px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+}
+header {
+	padding-top: 60px;
+}
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+}
+#map {
+	height: 400px;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+p {
+	margin-left: auto;
+	margin-right: auto;
+}
+h4 {
+	text-align: center;
+}
+.block {
+	padding-top: 10px; /** 避免快捷轉換書籤後，標題貼頂部太緊 */
+	margin-bottom: 70px;
+}
+.block p {
+	width: 1000px;
+	font-size: 18px;
+	/** text-align: left; */
+}
+		#info p {
+			width: 300px;
+			font-size:18px;
+		}
+		.block more{
+	width: 1000px;
+	font-size: 18px;
+		}
+i {
+	font-style: normal;
+}
+#scrollToTop {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: skyblue;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+}
+#scrollToTop:hover {
+	background-color: #555;
+}
+		
+		.morecontent span {
+    display: none;
+}
+.morelink {
+    display: block;
+}
+		
+		
+	
+
+
+
+
+
+
+
+		
+		
+    </style>
+	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+	<script language="javascript">
+		
+     
+		</script>
+	</head>
+	<body >
+
+<!-- Navbar -->
+<nav class="navbar navbar-default" style="background-color: ＃364457;opacity:  0.9;">
+      <div class="container-fluid"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand" href="#"><img src="image/logo.png" width="213" height="24" alt="大學入學考試中心" style="margin-top: 2px"/></a> </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+        <li class=""><a href="#"></a> </li>
+        <li><a href="#"></a> </li>
+        <li><a href="#"></a> </li>
+      </ul>
+          <form class="navbar-form navbar-right" role="search">
+        <div class="form-group"> 
+             
+            </div>
+      </form>
+          <ul class="nav navbar-nav navbar-right" style="margin-top: 2px">
+        <li><a href="#">註冊</a> </li>
+        <li><a href="#">登入</a> </li>
+        
+      </ul>
+        </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+      <!-- /.container-fluid --> 
+    </nav>
+
+<!-- Topic圖片-->
+<header style="padding-top: 12px">
+      <div class="jumbotron" style="height: 500px;padding-bottom: 0px"> <img src="image/Banner2.jpg" alt="" style="width: 100%;height: 100%;object-fit:cover;opacity: 0.9"/> </div>
+    </header>
+<!-- / HEADER --> 
+
+<!--  文字、圖片內容 -->
+<section>
+      <div class="container">
+    <div class="row" style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 2px rgba(0, 0, 0, 0.19);padding-bottom: 30px">
+						  <div class="col-lg-12 page-header text-center" >
+							<h2>問卷系統</h2>
+						  </div>
+		
+			 			<div class="text-center" id="top">
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a class="ui-button" data-target="#tab1" data-toggle="tab">一、 選才需求</a></li>
+                                <li><a class="ui-button" data-target="#tab2" data-toggle="tab">二、 高中課程需求</a></li>
+                                <li><a class="ui-button" data-target="#tab3" data-toggle="tab">三、 歸屬學群學類</a></li>
+                            </ul>
+                        </div>
+		
+                        <!-- 標籤內容-->
+                        <div class="panel-body">
+                            <div class="tab-content">
+                                <!-- 學類簡介 id=tab1default-->
+                                <div class="tab-pane fade in active" id="tab1">
+                                    <div class="row" style="margin: 20px;">
+                                        
+                                     	<ul style="list-style-type: none;">
+											<li class="col-sm-2"> <a class="thumbnail"  href="#1"> <i>
+											  <h4>1</h4>
+											  </i></a> </li>
+												 
+											<li class="col-sm-2"> <a class="thumbnail"  href="#2"> <i>
+											  <h4>2</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#3"> <i>
+											  <h4>3</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#4"> <i>
+											  <h4>4</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#5"> <i>
+											  <h4>5</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#6"> <i>
+											  <h4>6</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#7"> <i>
+											  <h4>7</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#8"> <i>
+											  <h4>8</h4>
+											  </i></a> </li>
+											<li class="col-sm-2"> <a class="thumbnail"  href="#9"> <i>
+											  <h4>9</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#10"> <i>
+											  <h4>10</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#11"> <i>
+											  <h4>11</h4>
+											  </i></a> </li>
+											<li class="col-sm-2"> <a class="thumbnail"  href="#12"> <i>
+											  <h4>12</h4>
+											  </i></a> </li>
+											</ul>
+                                    </div>
+                               
+                                        </div>
+								
+								 <div class="tab-pane fade " id="tab2">
+                                    <div class="row" style="margin: 20px;">                
+                                     		<ul style="list-style-type: none;">
+											<li class="col-sm-2"> <a class="thumbnail"  href="#13"> <i>
+											  <h4>1</h4>
+											  </i></a> </li>
+												 
+											<li class="col-sm-2"> <a class="thumbnail"  href="#14"> <i>
+											  <h4>2</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#15"> <i>
+											  <h4>3</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#16"> <i>
+											  <h4>4</h4>
+											  </i></a> </li>
+											
+											<li class="col-sm-2"> <a class="thumbnail"  href="#17"> <i>
+											  <h4>5</h4>
+											  </i></a> </li>
+											</ul>
+                                    </div>
+                                
+                                        </div>
+								
+								 <div class="tab-pane fade " id="tab3">
+                                    <div class="row" style="margin: 20px;">
+                                    
+                                     		<ul style="list-style-type: none;">
+											<li class="col-sm-2"> <a class="thumbnail"  href="#18"> <i>
+											  <h4>1</h4>
+											  </i></a> </li>
+											</ul>
+                                    </div>
+                             
+                                        </div>
+                                    </div>
+                                </div>
+                      
+     
+			
+		<script src="js/scrolling.js"></script>
+			
+        </div>
+  </div>
+	
+	<div>
+<a href="#top" id="back-to-top" title="Back to top">&uarr;</a>
+	</div>
+		
+	
+	
+
+      <div class="row block" id="1" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="2" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>2.請向高中生列舉三至五項本系主要會用到的學習方法，以文字簡要說明，<br>並請提供圖檔輔助。(解析度500dpi)。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+		
+			    <div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+				  
+				  
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖1</span>
+					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+					<span class="fileupload-preview"></span>
+					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			 	 </div>
+				  
+				   <div class="fileupload fileupload-new" data-provides="fileupload">
+					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖2</span>
+					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+					<span class="fileupload-preview"></span>
+					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			 	 </div>
+				  
+				   <div class="fileupload fileupload-new" data-provides="fileupload">
+					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖3</span>
+					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+					<span class="fileupload-preview"></span>
+					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			 	 </div>
+				  
+				   <div class="fileupload fileupload-new" data-provides="fileupload">
+					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖4</span>
+					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+					<span class="fileupload-preview"></span>
+					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			 	 </div>
+				  
+			    <div class="fileupload fileupload-new" data-provides="fileupload">
+					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖5</span>
+					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+					<span class="fileupload-preview"></span>
+					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+		 	    </div>
+
+			  	
+              </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="3" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="4" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="5" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="6" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="7" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="8" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="9" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="10" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="11" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="12" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	<div class="row block" id="13" style="">
+			<div class="col-lg-12 page-header text-center">
+			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			</div>
+			<div class="text-center">
+				
+			  <form>
+				<div class="form-group">
+				  <textarea class="form-control" rows="10" ></textarea>
+
+				</div>
+
+				  <div class="fileupload fileupload-new" data-provides="fileupload">
+				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+				<span class="fileupload-preview"></span>
+				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+			  </div>
+
+
+			  </form>
+
+        </div>
+  </div>
+	
+	
+	
+	
+      
+		
+		<!-- Show more content function -->
+		<script src="js/content.js"></script>
+		<script src="js/return_to_top.js"></script>
+	
+ </section>
+<!--  
+<div class="well"> </div>  空白橫條 --> 
+
+<!-- 底下footer-->
+<footer class="text-center">
+      <div class="container">
+    <div class="row">
+          <div class="col-xs-12"> <br>
+        <br>
+        <img src="image/logo.png" width="213" height="24" alt="大學入學考試中心"/> </div>
+        </div>
+  </div>
+    </footer>
+<!-- / FOOTER -->
+
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
+</body>
+</html>
