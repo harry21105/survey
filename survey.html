@@ -6,13 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bootstrap Agency Template</title>
 
-		
-			
-			<!-- fileUpload -->
-		<link rel="stylesheet" href="css/fileUpload.css">
-		<script src="js/fileUpload.js"></script>
-		
-		
+
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300">
@@ -24,6 +18,16 @@
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+
+		
+		
+       <!-- table link-->
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		
+		<script src="js/table.js"></script>
+		
+			
+		
     <style>
 .fa-2x {
 	font-size: 2em;
@@ -102,25 +106,10 @@ i {
     display: block;
 }
 		
-		
 	
-
-
-
-
-
-
-
-		
 		
     </style>
-	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
-	<script language="javascript">
-		
-     
-		</script>
+	
 	</head>
 	<body >
 
@@ -302,15 +291,24 @@ i {
 
 				</div>
 
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
+				  <!-- FileUpload Start-->
+				  <form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖1</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+	  <!-- FileUpload End-->
+				  
+				  
+	</form>
 
         </div>
   </div>
@@ -328,42 +326,75 @@ i {
 
 				</div>
 				  
-				  
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖1</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-				   <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖2</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-				   <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖3</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-				   <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖4</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-			    <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖5</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-		 	    </div>
-
+				 <!-- flieUpload START -->
+	<form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖1</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+				  <form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖2</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+				  <form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖3</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+				  <form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖4</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+	 <form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖5</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+		
+	<!-- fileUpload END --> 
+				
 			  	
               </form>
 
@@ -372,7 +403,7 @@ i {
 	
 	<div class="row block" id="3" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>3. 請向高中生簡要說明本系和相關科系的異同。</h3>
 			</div>
 			<div class="text-center">
 				
@@ -382,12 +413,19 @@ i {
 
 				</div>
 
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
+				  <form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖1</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
 
 
 			  </form>
@@ -397,47 +435,118 @@ i {
 	
 	<div class="row block" id="4" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>4.請依修課年級於下表列舉本系之必修或核心課程。</h3>
 			</div>
-			<div class="text-center">
+			<div class="">
+			
+
+    <div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table table-bordered table-hover table-sortable" id="tab_logic">
+				<thead>
+					<tr >
+						<th class="text-center">
+							修課年級
+						</th>
+						<th class="text-center">
+							課程名稱
+						</th>
+						<th class="text-center">
+						 	#
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr data-id="0" class="hidden " >
+						<td data-name="name">
+						  <div class="form-check form-check-inline">
+							  <label class="form-check-label">
+								<input type="checkbox" class="form-check-input" value="">大一
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+								<input type="checkbox" class="form-check-input" value="">大二
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+								<input type="checkbox" class="form-check-input" value="" >大三
+							  </label>
+							</div>
+							<div class="form-check form-check-inline">
+							  <label class="form-check-label">
+								<input type="checkbox" class="form-check-input" value="" >大四
+							  </label>
+							</div>
+						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
+						</td>
+						
+    					
+                        <td data-name="del">
+                            <button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+                        </td>
+					</tr>
+				</tbody>
 				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
+			</table>
+			<a id="add_row" class="btn btn-default pull-right" style="text-align: right">Add Row</a>
+		
+		</div>
+	</div>
+	
+</div>
 
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
+    
+		
   </div>
 	
 	<div class="row block" id="5" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>5.請依專業領域列舉本系主要的專業選修課程。（若無領域，請於領域欄註明「無領域區分」）</h3>
 			</div>
 			<div class="text-center">
 				
 			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
 
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
+		<div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table table-bordered table-hover table-sortable" >
+				<thead>
+					<tr >
+						<th class="text-center">
+							領域
+						</th>
+						<th class="text-center">
+							課程名稱
+						</th>
+						<th class="text-center">
+						 	#
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
+						</td>
+                        <td data-name="del">
+                            <button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+                        </td>
+					</tr>
+				</tbody>
+				
+			</table>
+			<a class="btn btn-default pull-right">Add Row</a>
+		
+		</div>
+	</div>
 
 
 			  </form>
@@ -447,22 +556,57 @@ i {
 	
 	<div class="row block" id="6" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>6. 在以上所列舉之課程中，請選出三至五項與本系想要培養之人才關係最密切、最基礎、最具特色或代表性、或最受學生歡迎的課程，請向高中生以文字簡要說明這幾個課程的內容與特色，並請提供照片或圖檔輔助。
+</h3>
 			</div>
 			<div class="text-center">
 				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
+		
+				 <form>
 
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
+		<div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table table-bordered table-hover table-sortable" >
+				<thead>
+					<tr >
+						<th class="text-center">
+							課程名稱
+						</th>
+						<th class="text-center">
+							內容、特色
+						</th>
+						<th class="text-center">
+						 	上傳檔案
+						</th>
+						<th class="text-center">
+						 	#
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
+						</td>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+                        <td data-name="del">
+                            <button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+                        </td>
+					</tr>
+				</tbody>
+				
+			</table>
+			<a class="btn btn-default pull-right">Add Row</a>
+		
+		</div>
+	</div>
 
 
 			  </form>
@@ -472,32 +616,66 @@ i {
 	
 	<div class="row block" id="7" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>7.請在以下的行職業分類選項中點選本系畢業生適合從事的工作類別。
+</h3>
 			</div>
 			<div class="text-center">
 				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
+			   <form>
 
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
+		<div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table table-bordered table-hover table-sortable" >
+				<thead>
+					<tr >
+						<th class="text-center">
+							課程名稱
+						</th>
+						<th class="text-center">
+							內容、特色
+						</th>
+						<th class="text-center">
+						 	上傳檔案
+						</th>
+						<th class="text-center">
+						 	#
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
+						</td>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+                        <td data-name="del">
+                            <button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+                        </td>
+					</tr>
+				</tbody>
+				
+			</table>
+			<a class="btn btn-default pull-right">Add Row</a>
+		
+		</div>
+	</div>
 
 
 			  </form>
-
         </div>
   </div>
 	
 	<div class="row block" id="8" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>8. 請向高中生列舉三至五項本系學生畢業後最適合從事的工作名稱，並簡要說明該項工作之內容。 
+</h3>
 			</div>
 			<div class="text-center">
 				
@@ -522,7 +700,8 @@ i {
 	
 	<div class="row block" id="9" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>9.請於本系畢業同學中選出在相關領域從事最具代表性職業或表現最傑出之系友三至五位，以文字簡要說明個人之學經歷及生涯發展歷程，並請提供系友照片或相關圖檔。
+</h3>
 			</div>
 			<div class="text-center">
 				
@@ -547,7 +726,7 @@ i {
 	
 	<div class="row block" id="10" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>10. 在本系的學習內容與學習方法方面，有哪些是最容易被高中生誤解之處？請簡要說明。 </h3>
 			</div>
 			<div class="text-center">
 				
@@ -572,7 +751,7 @@ i {
 	
 	<div class="row block" id="11" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>11. 在本系畢業學生的出路或生涯發展方面，有哪些是最容易被高中生誤解之處？請簡要說明。</h3>
 			</div>
 			<div class="text-center">
 				
@@ -597,7 +776,7 @@ i {
 	
 	<div class="row block" id="12" style="">
 			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+			  <h3>12. 就協助高中學生了解本系而言，還有哪些重要事項需補充說明？</h3>
 			</div>
 			<div class="text-center">
 				
@@ -620,30 +799,7 @@ i {
         </div>
   </div>
 	
-	<div class="row block" id="13" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
+	
 	
 	
 	
@@ -675,5 +831,11 @@ $(function() {
 	$( "#Button1" ).button(); 
 });
 </script>
+<!-- 檔案上傳js -->
+<script src="js/fileUpload.js"></script>
+
+		<!-- Matrix 表格 -->
+		<script src="js/survey.js"></script>
+		
 </body>
 </html>
