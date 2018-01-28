@@ -72,11 +72,11 @@ $(document).ready(function() {
         return $helper;
     };
   
-    $(".table-sortable tbody").sortable({
+    $("#tab_logic tbody").sortable({
         helper: fixHelperModified      
     }).disableSelection();
 
-    $(".table-sortable thead").disableSelection();
+    $("#tab_logic thead").disableSelection();
 
 
 
