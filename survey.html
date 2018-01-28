@@ -1,801 +1,1565 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Bootstrap Agency Template</title>
-
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap Agency Template</title>
+		<!-- Bootstrap -->
 		
-			
-			<!-- fileUpload -->
-		<link rel="stylesheet" href="css/fileUpload.css">
-		<script src="js/fileUpload.js"></script>
-		
-		
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300">
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300">
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
 		<link rel="stylesheet" href="css/return_to_top.css">
 		<script src="js/content.js"></script>
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="return_to_top.js"></script>
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
-    <style>
-.fa-2x {
-	font-size: 2em;
-}
-.fa {
-	position: relative;
-	display: table-cell;
-	width: 60px;
-	height: 36px;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 20px;
-}
-header {
-	padding-top: 60px;
-}
-html, body {
-	max-width: 100%;
-	overflow-x: hidden;
-}
-#map {
-	height: 400px;
-	max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-}
-p {
-	margin-left: auto;
-	margin-right: auto;
-}
-h4 {
-	text-align: center;
-}
-.block {
-	padding-top: 10px; /** 避免快捷轉換書籤後，標題貼頂部太緊 */
-	margin-bottom: 70px;
-}
-.block p {
-	width: 1000px;
-	font-size: 18px;
-	/** text-align: left; */
-}
-		#info p {
-			width: 300px;
-			font-size:18px;
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+		
+		
+		<!-- table link-->
+		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		
+		<script src="js/table.js"></script>
+		
+		
+		<style>
+		.fa-2x {
+			font-size: 2em;
 		}
-		.block more{
-	width: 1000px;
-	font-size: 18px;
+		.fa {
+			position: relative;
+			display: table-cell;
+			width: 60px;
+			height: 36px;
+			text-align: center;
+			vertical-align: middle;
+			font-size: 20px;
 		}
-i {
-	font-style: normal;
-}
-#scrollToTop {
-	display: none;
-	position: fixed;
-	bottom: 20px;
-	right: 30px;
-	z-index: 99;
-	border: none;
-	outline: none;
-	background-color: skyblue;
-	color: white;
-	cursor: pointer;
-	padding: 15px;
-	border-radius: 10px;
-}
-#scrollToTop:hover {
-	background-color: #555;
-}
+		header {
+			padding-top: 60px;
+		}
+		html, body {
+			max-width: 100%;
+			overflow-x: hidden;
+		}
+		#map {
+			height: 400px;
+			max-width: 1000px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		p {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		h4 {
+			text-align: center;
+		}
+		.block {
+			padding-top: 10px; /** 避免快捷轉換書籤後，標題貼頂部太緊 */
+			margin-bottom: 70px;
+		}
+		.block p {
+			width: 1000px;
+			font-size: 18px;
+			/** text-align: left; */
+		}
+				#info p {
+					width: 300px;
+					font-size:18px;
+				}
+				.block more{
+			width: 1000px;
+			font-size: 18px;
+				}
+		i {
+			font-style: normal;
+		}
+		#scrollToTop {
+			display: none;
+			position: fixed;
+			bottom: 20px;
+			right: 30px;
+			z-index: 99;
+			border: none;
+			outline: none;
+			background-color: skyblue;
+			color: white;
+			cursor: pointer;
+			padding: 15px;
+			border-radius: 10px;
+		}
+		#scrollToTop:hover {
+			background-color: #555;
+		}
+				
+				.morecontent span {
+		display: none;
+		}
+		.morelink {
+		display: block;
+		}
+		.open ul.dropdown-menu { /*修正table中的dropdown*/
+		display: block;
+		}
+				
+		</style>
 		
-		.morecontent span {
-    display: none;
-}
-.morelink {
-    display: block;
-}
-		
-		
-	
-
-
-
-
-
-
-
-		
-		
-    </style>
-	<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-	<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-	<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
-	<script language="javascript">
-		
-     
-		</script>
 	</head>
 	<body >
-
-<!-- Navbar -->
-<nav class="navbar navbar-default" style="background-color: ＃364457;opacity:  0.9;">
-      <div class="container-fluid"> 
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="#"><img src="image/logo.png" width="213" height="24" alt="大學入學考試中心" style="margin-top: 2px"/></a> </div>
-    
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-        <li class=""><a href="#"></a> </li>
-        <li><a href="#"></a> </li>
-        <li><a href="#"></a> </li>
-      </ul>
-          <form class="navbar-form navbar-right" role="search">
-        <div class="form-group"> 
-             
-            </div>
-      </form>
-          <ul class="nav navbar-nav navbar-right" style="margin-top: 2px">
-        <li><a href="#">註冊</a> </li>
-        <li><a href="#">登入</a> </li>
-        
-      </ul>
-        </div>
-    <!-- /.navbar-collapse --> 
-  </div>
-      <!-- /.container-fluid --> 
-    </nav>
-
-<!-- Topic圖片-->
-<header style="padding-top: 12px">
-      <div class="jumbotron" style="height: 500px;padding-bottom: 0px"> <img src="image/Banner2.jpg" alt="" style="width: 100%;height: 100%;object-fit:cover;opacity: 0.9"/> </div>
-    </header>
-<!-- / HEADER --> 
-
-<!--  文字、圖片內容 -->
-<section>
-      <div class="container">
-    <div class="row" style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 2px rgba(0, 0, 0, 0.19);padding-bottom: 30px">
-						  <div class="col-lg-12 page-header text-center" >
+		<!-- Navbar -->
+		<nav class="navbar navbar-default" style="background-color: ＃364457;opacity:  0.9;">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+					<a class="navbar-brand" href="#"><img src="image/logo.png" width="213" height="24" alt="大學入學考試中心" style="margin-top: 2px"/></a> </div>
+					
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class=""><a href="#"></a> </li>
+							<li><a href="#"></a> </li>
+							<li><a href="#"></a> </li>
+						</ul>
+						<form class="navbar-form navbar-right" role="search">
+							<div class="form-group">
+								
+							</div>
+						</form>
+						<ul class="nav navbar-nav navbar-right" style="margin-top: 2px">
+							<li><a href="#">註冊</a> </li>
+							<li><a href="#">登入</a> </li>
+							
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
+			<!-- Topic圖片-->
+			<header style="padding-top: 12px">
+				<div class="jumbotron" style="height: 500px;padding-bottom: 0px"> <img src="image/Banner2.jpg" alt="" style="width: 100%;height: 100%;object-fit:cover;opacity: 0.9"/> </div>
+			</header>
+			<!-- / HEADER -->
+			<!--  文字、圖片內容 -->
+			<section>
+				<div class="container">
+					<div class="row" style="box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 2px rgba(0, 0, 0, 0.19);padding-bottom: 30px">
+						<div class="col-lg-12 page-header text-center" >
 							<h2>問卷系統</h2>
-						  </div>
-		
-			 			<div class="text-center" id="top">
-                            <ul class="nav nav-tabs">
-                                <li class="active"><a class="ui-button" data-target="#tab1" data-toggle="tab">一、 選才需求</a></li>
-                                <li><a class="ui-button" data-target="#tab2" data-toggle="tab">二、 高中課程需求</a></li>
-                                <li><a class="ui-button" data-target="#tab3" data-toggle="tab">三、 歸屬學群學類</a></li>
-                            </ul>
-                        </div>
-		
-                        <!-- 標籤內容-->
-                        <div class="panel-body">
-                            <div class="tab-content">
-                                <!-- 學類簡介 id=tab1default-->
-                                <div class="tab-pane fade in active" id="tab1">
-                                    <div class="row" style="margin: 20px;">
-                                        
-                                     	<ul style="list-style-type: none;">
+						</div>
+						
+						<div class="text-center" id="top">
+							<ul class="nav nav-tabs">
+								<li class="active"><a class="ui-button" data-target="#tab1" data-toggle="tab">一、 選才需求</a></li>
+								<li><a class="ui-button" data-target="#tab2" data-toggle="tab">二、 高中課程需求</a></li>
+								<li><a class="ui-button" data-target="#tab3" data-toggle="tab">三、 歸屬學群學類</a></li>
+							</ul>
+						</div>
+						
+						<!-- 標籤內容-->
+						<div class="panel-body">
+							<div class="tab-content">
+								<!-- 學類簡介 id=tab1default-->
+								<div class="tab-pane fade in active" id="tab1">
+									<div class="row" style="margin: 20px;">
+										
+										<ul style="list-style-type: none;">
 											<li class="col-sm-2"> <a class="thumbnail"  href="#1"> <i>
-											  <h4>1</h4>
-											  </i></a> </li>
-												 
+												<h4>1</h4>
+											</i></a> </li>
+											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#2"> <i>
-											  <h4>2</h4>
-											  </i></a> </li>
+												<h4>2</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#3"> <i>
-											  <h4>3</h4>
-											  </i></a> </li>
+												<h4>3</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#4"> <i>
-											  <h4>4</h4>
-											  </i></a> </li>
+												<h4>4</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#5"> <i>
-											  <h4>5</h4>
-											  </i></a> </li>
+												<h4>5</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#6"> <i>
-											  <h4>6</h4>
-											  </i></a> </li>
+												<h4>6</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#7"> <i>
-											  <h4>7</h4>
-											  </i></a> </li>
+												<h4>7</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#8"> <i>
-											  <h4>8</h4>
-											  </i></a> </li>
+												<h4>8</h4>
+											</i></a> </li>
 											<li class="col-sm-2"> <a class="thumbnail"  href="#9"> <i>
-											  <h4>9</h4>
-											  </i></a> </li>
+												<h4>9</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#10"> <i>
-											  <h4>10</h4>
-											  </i></a> </li>
+												<h4>10</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#11"> <i>
-											  <h4>11</h4>
-											  </i></a> </li>
+												<h4>11</h4>
+											</i></a> </li>
 											<li class="col-sm-2"> <a class="thumbnail"  href="#12"> <i>
-											  <h4>12</h4>
-											  </i></a> </li>
-											</ul>
-                                    </div>
-                               
-                                        </div>
+												<h4>12</h4>
+											</i></a> </li>
+										</ul>
+									</div>
+									
+								</div>
 								
-								 <div class="tab-pane fade " id="tab2">
-                                    <div class="row" style="margin: 20px;">                
-                                     		<ul style="list-style-type: none;">
+								<div class="tab-pane fade " id="tab2">
+									<div class="row" style="margin: 20px;">
+										<ul style="list-style-type: none;">
 											<li class="col-sm-2"> <a class="thumbnail"  href="#13"> <i>
-											  <h4>1</h4>
-											  </i></a> </li>
-												 
+												<h4>13</h4>
+											</i></a> </li>
+											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#14"> <i>
-											  <h4>2</h4>
-											  </i></a> </li>
+												<h4>14</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#15"> <i>
-											  <h4>3</h4>
-											  </i></a> </li>
+												<h4>15</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#16"> <i>
-											  <h4>4</h4>
-											  </i></a> </li>
+												<h4>16</h4>
+											</i></a> </li>
 											
 											<li class="col-sm-2"> <a class="thumbnail"  href="#17"> <i>
-											  <h4>5</h4>
-											  </i></a> </li>
-											</ul>
-                                    </div>
-                                
-                                        </div>
+												<h4>17</h4>
+											</i></a> </li>
+										</ul>
+									</div>
+									
+								</div>
 								
-								 <div class="tab-pane fade " id="tab3">
-                                    <div class="row" style="margin: 20px;">
-                                    
-                                     		<ul style="list-style-type: none;">
+								<div class="tab-pane fade " id="tab3">
+									<div class="row" style="margin: 20px;">
+										
+										<ul style="list-style-type: none;">
 											<li class="col-sm-2"> <a class="thumbnail"  href="#18"> <i>
-											  <h4>1</h4>
-											  </i></a> </li>
-											</ul>
-                                    </div>
-                             
-                                        </div>
-                                    </div>
-                                </div>
-                      
-     
-			
-		<script src="js/scrolling.js"></script>
-			
-        </div>
-  </div>
-	
-	<div>
-<a href="#top" id="back-to-top" title="Back to top">&uarr;</a>
+												<h4>18</h4>
+											</i></a> </li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						
+						
+						
+						<script src="js/scrolling.js"></script>
+						
+					</div>
+				</div>
+				
+				<div>
+					<a href="#top" id="back-to-top" title="Back to top">&uarr;</a>
+				</div>
+				
+				
+				
+				<div class="row block" id="1" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" rows="10" ></textarea>
+							</div>
+							<!-- FileUpload Start-->
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1" >
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<!-- FileUpload End-->
+							
+							
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="2" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>2.請向高中生列舉三至五項本系主要會用到的學習方法，以文字簡要說明，<br>並請提供圖檔輔助。(解析度500dpi)。</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							
+							<div class="form-group">
+								<textarea class="form-control" rows="10" ></textarea>
+							</div>
+							
+							<!-- flieUpload START -->
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖2</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖3</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖4</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖5</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							
+							<!-- fileUpload END -->
+							
+							
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="3" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>3. 請向高中生簡要說明本系和相關科系的異同。</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" rows="10" ></textarea>
+							</div>
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="4" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>4.請依修課年級於下表列舉本系之必修或核心課程。</h3>
+					</div>
+					<div class="">
+						
+						<div class="row clearfix">
+							<div class="col-md-12 table-responsive">
+								<table class="table  table-hover table-sortable" id="tab_logic">
+									<thead>
+										<tr >
+											<th class="text-center">
+												修課年級
+											</th>
+											<th class="text-center">
+												課程名稱
+											</th>
+											<th class="text-center">
+												#
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr data-id="0" class="hidden " >
+											<td data-name="name">
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" value="">大一
+													</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" value="">大二
+													</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" value="" >大三
+													</label>
+												</div>
+												<div class="form-check form-check-inline">
+													<label class="form-check-label">
+														<input type="checkbox" class="form-check-input" value="" >大四
+													</label>
+												</div>
+											</td>
+											<td data-name="class">
+												<input type="text" name="class" placeholder="Class" class="form-control"/>
+											</td>
+											
+											
+											<td data-name="del">
+												<button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+											</td>
+										</tr>
+									</tbody>
+									
+								</table>
+								<a id="add_row" class="btn btn-default pull-right" style="text-align: right">Add Row</a>
+								
+							</div>
+						</div>
+						
+					</div>
+					
+					
+				</div>
+				
+				<div class="row block" id="5" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>5.請依專業領域列舉本系主要的專業選修課程。（若無領域，請於領域欄註明「無領域區分」）</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="row clearfix">
+								<div class="col-md-12 table-responsive">
+									<table class="table table-hover table-sortable" id="tab_logic2" style="">
+										<thead>
+											<tr>
+												<th class="text-center">
+													領域
+												</th>
+												<th class="text-center">
+													課程名稱
+												</th>
+												<th class="text-center">
+													#
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-name="name">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+													
+												</td>
+												<td data-name="class">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+												</td>
+												<td data-name="del">
+													<button name="del0" class="btn btn-danger">刪除</button>
+												</td>
+											</tr>
+										</tbody>
+										
+									</table>
+									<a class="btn btn-default pull-right">Add Row</a>
+									
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="6" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>6. 在以上所列舉之課程中，請選出三至五項與本系想要培養之人才關係最密切、最基礎、最具特色或代表性、或最受學生歡迎的課程，請向高中生以文字簡要說明這幾個課程的內容與特色，並請提供照片或圖檔輔助。
+						</h3>
+					</div>
+					<div class="text-center">
+						
+						
+						<form>
+							<div class="row clearfix">
+								<div class="col-md-12 table-responsive">
+									<table class="table   table-hover table-sortable" >
+										<thead>
+											<tr >
+												<th class="text-center">
+													課程名稱
+												</th>
+												<th class="text-center">
+													內容、特色
+												</th>
+												<th class="text-center">
+													上傳檔案
+												</th>
+												<th class="text-center">
+													#
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-name="name">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+													
+												</td>
+												<td data-name="class">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+												</td>
+												<td data-name="name">
+													<!-- File Upload-->
+													<form method="POST" action="#" enctype="multipart/form-data">
+														<div class="form-group">
+															<div class="input-group input-file" name="Fichier1">
+																<span class="input-group-btn">
+																	<button class="btn btn-default btn-choose" type="button">圖1</button>
+																</span>
+																<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+																<span class="input-group-btn">
+																	<button class="btn btn-warning btn-reset" type="button">清除</button>
+																</span>
+															</div>
+														</div>
+													</form>
+													
+												</td>
+												<td data-name="del">
+													<button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+												</td>
+											</tr>
+										</tbody>
+										
+									</table>
+									<a class="btn btn-default pull-right">Add Row</a>
+									
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="7" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>7.請在以下的行職業分類選項中點選本系畢業生適合從事的工作類別。
+						</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="row clearfix">
+								<div class="col-md-12 table-responsive">
+									<table class="table   table-hover table-sortable" >
+										<thead>
+											<tr >
+												<th class="text-center">
+													行職大類
+												</th>
+												<th class="text-center">
+												中類</th>
+												<th class="text-center">
+													職業說明
+												</th>
+												<th class="text-center">
+													勾選
+												</th>
+												<th class="text-center">
+													代表性評分(1-20)
+												</th>
+												<th class="text-center">
+													#
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td data-name="name">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+													
+												</td>
+												<td data-name="class">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+												</td>
+												<td data-name="class">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+												</td>
+												<td data-name="name">
+													<div class="checkbox">
+														<label><input type="checkbox" value=""></label>
+													</div>
+													
+												</td>
+												<td data-name="class">
+													<input type="text" name="class" placeholder="Class" class="form-control"/>
+												</td>
+												<td data-name="del">
+													<button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+												</td>
+											</tr>
+										</tbody>
+										
+									</table>
+									<a class="btn btn-default pull-right">Add Row</a>
+									
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="8" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>8. 請向高中生列舉三至五項本系學生畢業後最適合從事的工作名稱，並簡要說明該項工作之內容。
+						</h3>
+					</div>
+					<form>
+						<div class="row clearfix">
+							<div class="col-md-12 table-responsive">
+								<table class="table   table-hover table-sortable" id="" >
+									<thead>
+										<tr >
+											<th class="text-center">
+												工作名稱
+											</th>
+											<th class="text-center">
+												說明
+											</th>
+											<th class="text-center">
+												#
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-name="name">
+												<input type="text" name="class" placeholder="Class" class="form-control"/>
+												
+											</td>
+											<td data-name="class">
+												<input type="text" name="class" placeholder="Class" class="form-control"/>
+											</td>
+											<td data-name="del">
+												<button name="del0" class="btn btn-danger">刪除</button>
+											</td>
+										</tr>
+									</tbody>
+									
+								</table>
+								<a class="btn btn-default pull-right">Add Row</a>
+								
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				<div class="row block" id="9" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>9.請於本系畢業同學中選出在相關領域從事最具代表性職業或表現最傑出之系友三至五位，以文字簡要說明個人之學經歷及生涯發展歷程，並請提供系友照片或相關圖檔。
+						</h3>
+					</div>
+					<form>
+						<div class="row clearfix">
+							<div class="col-md-12 table-responsive">
+								<table class="table   table-hover table-sortable" id="" >
+									<thead>
+										<tr >
+											<th class="text-center">
+												姓名
+											</th>
+											<th class="text-center">
+												學、經歷
+											</th>
+											<th class="text-center">
+												生涯發展
+											</th>
+											<th class="text-center">
+												上傳檔案
+											</th>
+											<th class="text-center">
+												#
+											</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td data-name="name">
+												<input type="text" name="class" placeholder="Class" class="form-control"/>
+												
+											</td>
+											<td data-name="name">
+												<input type="text" name="class" placeholder="Class" class="form-control"/>
+												
+											</td>
+											<td data-name="name">
+												<input type="text" name="class" placeholder="Class" class="form-control"/>
+												
+											</td>
+											<td data-name="class">
+												<!-- File Upload-->
+												<form method="POST" action="#" enctype="multipart/form-data">
+													<div class="form-group">
+														<div class="input-group input-file" name="Fichier1">
+															<span class="input-group-btn">
+																<button class="btn btn-default btn-choose" type="button">圖1</button>
+															</span>
+															<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+															<span class="input-group-btn">
+																<button class="btn btn-warning btn-reset" type="button">清除</button>
+															</span>
+														</div>
+													</div>
+												</form>
+												
+											</td>
+											<td data-name="del">
+												<button name="del0" class="btn btn-danger">刪除</button>
+											</td>
+										</tr>
+									</tbody>
+									
+								</table>
+								<a class="btn btn-default pull-right">Add Row</a>
+								
+							</div>
+						</div>
+					</form>
+				</div>
+				
+				<div class="row block" id="10" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>10. 在本系的學習內容與學習方法方面，有哪些是最容易被高中生誤解之處？請簡要說明。 </h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" rows="10" ></textarea>
+							</div>
+							<!-- flieUpload START -->
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<!-- flieUpload END -->
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="11" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>11. 在本系畢業學生的出路或生涯發展方面，有哪些是最容易被高中生誤解之處？請簡要說明。</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" rows="10" ></textarea>
+							</div>
+							<!-- flieUpload START -->
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊上傳"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							<!-- flieUpload END -->
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="12" style="">
+					<div class="col-lg-12 page-header text-center">
+						<h3>12. 就協助高中學生了解本系而言，還有哪些重要事項需補充說明？</h3>
+					</div>
+					<div class="text-center">
+						
+						<form>
+							<div class="form-group">
+								<textarea class="form-control" rows="10" ></textarea>
+							</div>
+							<div class="fileupload fileupload-new" data-provides="fileupload">
+								<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
+								<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
+								<span class="fileupload-preview"></span>
+								<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+				<div class="row block" id="13" style="">
+					<div class="col-lg-12 page-header text-center ">
+						<div class="text-center col-lg-10 col-lg-offset-1"><h3>13.以下是十二年國教課綱所要培養的學生核心素養，請點選與本系學習或未來生涯發展所重視的素養。然後請在每一素養後以百分比數字表示與本系學習或未來生涯發展重視的程度，各素養重視程度之加總應為100%。</h3></div>
+					</div>
+					
+					<div class="row clearfix">
+						<div class="col-lg-8 col-lg-offset-2 table-responsive">
+							<form action="">
+								<div class="form-group">
+									<table class="table table-condensed">
+										<thead>
+											<tr>
+												<th>三面九項</th>
+												<th>重視程度</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td><select class="form-control">
+													<option value="">請選擇</option>
+													<option value="1">自主行動-系統思考與解決問題</option>
+													<option value="2">規劃執行與創新應變</option>
+													<option value="3">符號運用與溝通表達</option>
+													<option value="4">科技資訊與媒體素養</option>
+													<option value="5">藝術涵養與美感素養</option>
+													<option value="6">道德實踐與公民意識</option>
+													<option value="7">人際關西與團隊合作</option>
+													<option value="8">多元文化與國際理解</option>
+													<option value="9">身心素質與自我精進</option>
+												</select>
+											</td>
+											<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+										</tr>
+										<tr>
+											<td><select class="form-control">
+												<option value="">請選擇</option>
+												<option value="1">自主行動-系統思考與解決問題</option>
+												<option value="2">規劃執行與創新應變</option>
+												<option value="3">符號運用與溝通表達</option>
+												<option value="4">科技資訊與媒體素養</option>
+												<option value="5">藝術涵養與美感素養</option>
+												<option value="6">道德實踐與公民意識</option>
+												<option value="7">人際關西與團隊合作</option>
+												<option value="8">多元文化與國際理解</option>
+												<option value="9">身心素質與自我精進</option>
+											</select>
+										</td>
+										<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+									</tr>
+									<tr>
+										<td><select class="form-control">
+											<option value="">請選擇</option>
+											<option value="1">自主行動-系統思考與解決問題</option>
+											<option value="2">規劃執行與創新應變</option>
+											<option value="3">符號運用與溝通表達</option>
+											<option value="4">科技資訊與媒體素養</option>
+											<option value="5">藝術涵養與美感素養</option>
+											<option value="6">道德實踐與公民意識</option>
+											<option value="7">人際關西與團隊合作</option>
+											<option value="8">多元文化與國際理解</option>
+											<option value="9">身心素質與自我精進</option>
+										</select>
+									</td>
+									<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+								</tr>
+								<tr>
+									<td><select class="form-control">
+										<option value="">請選擇</option>
+										<option value="1">自主行動-系統思考與解決問題</option>
+										<option value="2">規劃執行與創新應變</option>
+										<option value="3">符號運用與溝通表達</option>
+										<option value="4">科技資訊與媒體素養</option>
+										<option value="5">藝術涵養與美感素養</option>
+										<option value="6">道德實踐與公民意識</option>
+										<option value="7">人際關西與團隊合作</option>
+										<option value="8">多元文化與國際理解</option>
+										<option value="9">身心素質與自我精進</option>
+									</select>
+								</td>
+								<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+							</tr>
+							<tr>
+								<td><select class="form-control">
+									<option value="">請選擇</option>
+									<option value="1">自主行動-系統思考與解決問題</option>
+									<option value="2">規劃執行與創新應變</option>
+									<option value="3">符號運用與溝通表達</option>
+									<option value="4">科技資訊與媒體素養</option>
+									<option value="5">藝術涵養與美感素養</option>
+									<option value="6">道德實踐與公民意識</option>
+									<option value="7">人際關西與團隊合作</option>
+									<option value="8">多元文化與國際理解</option>
+									<option value="9">身心素質與自我精進</option>
+								</select>
+							</td>
+							<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</form>
 	</div>
-		
-	
-	
-
-      <div class="row block" id="1" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="2" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>2.請向高中生列舉三至五項本系主要會用到的學習方法，以文字簡要說明，<br>並請提供圖檔輔助。(解析度500dpi)。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-		
-			    <div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-				  
-				  
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖1</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-				   <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖2</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-				   <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖3</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-				   <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖4</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			 	 </div>
-				  
-			    <div class="fileupload fileupload-new" data-provides="fileupload">
-					<span class="btn btn-primary btn-file"><span class="fileupload-new">圖5</span>
-					<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-					<span class="fileupload-preview"></span>
-					<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-		 	    </div>
-
-			  	
-              </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="3" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="4" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="5" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="6" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="7" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="8" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="9" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="10" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="11" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="12" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>1. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	<div class="row block" id="13" style="">
-			<div class="col-lg-12 page-header text-center ">
-			  <div class="text-center col-lg-8 col-lg-offset-2"><h3>13.以下是十二年國教課綱所要培養的學生核心素養，請點選與本系學習或未來生涯發展所重視的素養。然後請在每一素養後以百分比數字表示與本系學習或未來生涯發展重視的程度，各素養重視程度之加總應為100%。</h3></div>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-  <div class="row block" id="14" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>14.以下是十二年國教課綱普通高中的課程領域，請點選本系學習或未來生涯發展所重視的課程領域。
-然後請在每一領域前以百分比數字表示與本系學習或未來生涯發展重
-視的程度，各領域重視程度之加總應為100%。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-  <div class="row block" id="15" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>15. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-  <div class="row block" id="16" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>16. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-  <div class="row block" id="17" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>17. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-  <div class="row block" id="18" style="">
-			<div class="col-lg-12 page-header text-center">
-			  <h3>18. 請向高中生簡要說明本系系名所指涉的學科定義或意涵。</h3>
-			</div>
-			<div class="text-center">
-				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
-			  </form>
-
-        </div>
-  </div>
-	
-	
-	
-	
-      
-		
-		<!-- Show more content function -->
-		<script src="js/content.js"></script>
-		<script src="js/return_to_top.js"></script>
-	
- </section>
-<!--  
-<div class="well"> </div>  空白橫條 --> 
-
+</div>
+</div>
+<div class="row block" id="14" style="">
+<div class="col-lg-12 page-header text-center">
+	<div class="text-center col-lg-10 col-lg-offset-1"><h3>14.以下是十二年國教課綱普通高中的課程領域，請點選本系學習或未來生涯發展所重視的課程領域。
+		然後請在每一領域前以百分比數字表示與本系學習或未來生涯發展重
+	視的程度，各領域重視程度之加總應為100%。</h3></div>
+</div>
+<div class="row clearfix">
+	<div class="col-lg-8 col-lg-offset-2 table-responsive">
+		<form action="">
+			<div class="form-group">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>課程領域</th>
+							<th>次領域</th>
+							<th>重視程度</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><select class="form-control">
+								<option value="">請選擇</option>
+								<option value="1">語文</option>
+								<option value="2">自然科學</option>
+								<option value="3">綜合活動</option>
+								<option value="4">社會</option>
+								<option value="5">數學</option>
+							</select>
+						</td>
+						<td><select class="form-control">
+							<option value="">請選擇</option>
+							<option value="1">語文-國語文</option>
+							<option value="2">語文-英語文</option>
+							<option value="3">語文-第二外語</option>
+						</select>
+					</td>
+					<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+				</tr>
+				<tr>
+					<td><select class="form-control">
+						<option value="">請選擇</option>
+						<option value="1">語文</option>
+						<option value="2">自然科學</option>
+						<option value="3">綜合活動</option>
+						<option value="4">社會</option>
+						<option value="5">數學</option>
+					</select>
+				</td>
+				<td><select class="form-control">
+					<option value="">請選擇</option>
+					<option value="1">綜合活動-生命教育</option>
+					<option value="2">綜合活動-生涯規劃</option>
+				</select>
+			</td>
+			<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+		</tr>
+		<tr>
+			<td><select class="form-control">
+				<option value="">請選擇</option>
+				<option value="1">綜合活動-生命教育</option>
+				<option value="2">綜合活動-生涯規劃</option>
+			</select>
+		</td>
+		<td><select class="form-control">
+			<option value="">請選擇</option>
+			<option value="1">語文-國語文</option>
+			<option value="2">語文-英語文</option>
+			<option value="3">語文-第二外語</option>
+		</select>
+	</td>
+	<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+	<td><select class="form-control">
+		<option value="">請選擇</option>
+		<option value="1">語文-國語文</option>
+		<option value="2">語文-英語文</option>
+		<option value="3">語文-第二外語</option>
+	</select>
+</td>
+<td><select class="form-control">
+	<option value="">請選擇</option>
+	<option value="1">語文-國語文</option>
+	<option value="2">語文-英語文</option>
+	<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td>
+<select class="form-control">
+	<option value="">請選擇</option>
+	<option value="1">語文-國語文</option>
+	<option value="2">語文-英語文</option>
+	<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td>
+<select class="form-control">
+	<option value="">請選擇</option>
+	<option value="1">語文-國語文</option>
+	<option value="2">語文-英語文</option>
+	<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row block" id="15" style="">
+<div class="col-lg-12 page-header text-center">
+<div class="text-center col-lg-10 col-lg-offset-1"><h3>15.以下是十二年國教課綱普通高中加深加廣選修課程，請點選與本系學習或未來生涯發展有關的課程。然後請在每一領域前以百分比數字表示與本系學習或未來生涯發展有關的比重，各領域比重之加總應為100%。
+視的程度，各領域重視程度之加總應為100%。</h3></div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-8 col-lg-offset-2 table-responsive">
+<form action="">
+<div class="form-group">
+<table class="table table-condensed">
+<thead>
+<tr>
+<th>領域</th>
+<th>加深加廣選修課程</th>
+<th>重視程度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">國文科</option>
+<option value="2">英文科</option>
+<option value="3">綜合活動</option>
+<option value="4">社會科</option>
+<option value="5">數學科</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文表達與傳播應用</option>
+<option value="2">專題閱讀與研究</option>
+<option value="3">英文閱讀與寫作</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文</option>
+<option value="2">自然科學</option>
+<option value="3">綜合活動</option>
+<option value="4">社會</option>
+<option value="5">數學</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">綜合活動-生命教育</option>
+<option value="2">綜合活動-生涯規劃</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">綜合活動-生命教育</option>
+<option value="2">綜合活動-生涯規劃</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文-國語文</option>
+<option value="2">語文-英語文</option>
+<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文-國語文</option>
+<option value="2">語文-英語文</option>
+<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文-國語文</option>
+<option value="2">語文-英語文</option>
+<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td>
+<select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文-國語文</option>
+<option value="2">語文-英語文</option>
+<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td>
+<select class="form-control">
+<option value="">請選擇</option>
+<option value="1">語文-國語文</option>
+<option value="2">語文-英語文</option>
+<option value="3">語文-第二外語</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row block" id="16" style="">
+<div class="col-lg-12 page-header text-center ">
+<div class="text-center col-lg-10 col-lg-offset-1"><h3>16.以下是學習或生涯發展所需之能力，請點選與本系學習或未來生涯發展有關的能力。然後請在每一能力前以百分比數字表示與本系學習或未來生涯發展有關的比
+重，各能力比重之加總應為100%。</h3></div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-8 col-lg-offset-2 table-responsive">
+<form action="">
+<div class="form-group">
+<table class="table table-condensed">
+<thead>
+<tr>
+<th>多元能力</th>
+<th>重視程度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>語文運用：正確運用語文詞彙及文法。
+</td>
+<td><input type="number" name="quantity1" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>閱讀能力：閱讀及了解文字資料。</td>
+<td><input type="number" name="quantity2" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>外語能力：外國語文聽說讀寫能力。</td>
+<td><input type="number" name="quantity3" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>抽象推理：對非文字的類化與歸納能力。
+</td>
+<td><input type="number" name="quantity4" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>數字推理：數字之運用與推理能力。
+</td>
+<td><input type="number" name="quantity5" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>科學能力：了解科學的原理原則及操作科學事務的能力。
+</td>
+<td><input type="number" name="quantity6" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>組織能力：掌握細節並有系統的做事。
+</td>
+<td><input type="number" name="quantity7" min="5" max="100" step="5" value="0"></td>
+</tr>
+<tr>
+<td>助人能力：教導或照顧他人的能力。
+</td>
+<td><input type="number" name="quantity8" min="5" max="100" step="5" value="0"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row block" id="17" style="">
+<div class="col-lg-12 page-header text-center">
+<div class="text-center col-lg-10 col-lg-offset-1"><h3>17.以下是與學習及生涯發展有關之個人特質，請點選與本系學習或未來生涯發展有關的特質。然後請在每一特質前以百分比數字表示與本系學習或未來生涯發展有關的特質，各特質比重之加總應為100%。
+視的程度，各領域重視程度之加總應為100%。</h3></div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-8 col-lg-offset-2 table-responsive">
+<form action="">
+<div class="form-group">
+<table class="table table-condensed">
+<thead>
+<tr>
+<th>大特質</th>
+<th>小特質</th>
+<th>重視程度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">內外像</option>
+<option value="2">人際關西</option>
+<option value="3">情緒穩定性</option>
+<option value="4">嚴謹性</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">社交性高：活潑熱情、健談喜言、樂於與人群互動、人際層面廣泛。</option>
+<option value="2">親和性高：熱心，溫和，利他主義，關懷同情他人，幫助他人，追求和諧。</option>
+<option value="3">情緒穩定：心平氣和情緒穩定，溫和安定安然自在，面對現實意志堅定，心情不易動搖</option>
+<option value="3">勇悍高：願意面對問題，勇敢無懼，努力解決困難。</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">內外像</option>
+<option value="2">人際關西</option>
+<option value="3">情緒穩定性</option>
+<option value="4">嚴謹性</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">社交性高：活潑熱情、健談喜言、樂於與人群互動、人際層面廣泛。</option>
+<option value="2">親和性高：熱心，溫和，利他主義，關懷同情他人，幫助他人，追求和諧。</option>
+<option value="3">情緒穩定：心平氣和情緒穩定，溫和安定安然自在，面對現實意志堅定，心情不易動搖</option>
+<option value="3">勇悍高：願意面對問題，勇敢無懼，努力解決困難。</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">內外像</option>
+<option value="2">人際關西</option>
+<option value="3">情緒穩定性</option>
+<option value="4">嚴謹性</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">社交性高：活潑熱情、健談喜言、樂於與人群互動、人際層面廣泛。</option>
+<option value="2">親和性高：熱心，溫和，利他主義，關懷同情他人，幫助他人，追求和諧。</option>
+<option value="3">情緒穩定：心平氣和情緒穩定，溫和安定安然自在，面對現實意志堅定，心情不易動搖</option>
+<option value="3">勇悍高：願意面對問題，勇敢無懼，努力解決困難。</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">內外像</option>
+<option value="2">人際關西</option>
+<option value="3">情緒穩定性</option>
+<option value="4">嚴謹性</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">社交性高：活潑熱情、健談喜言、樂於與人群互動、人際層面廣泛。</option>
+<option value="2">親和性高：熱心，溫和，利他主義，關懷同情他人，幫助他人，追求和諧。</option>
+<option value="3">情緒穩定：心平氣和情緒穩定，溫和安定安然自在，面對現實意志堅定，心情不易動搖</option>
+<option value="3">勇悍高：願意面對問題，勇敢無懼，努力解決困難。</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+<tr>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">內外像</option>
+<option value="2">人際關西</option>
+<option value="3">情緒穩定性</option>
+<option value="4">嚴謹性</option>
+</select>
+</td>
+<td><select class="form-control">
+<option value="">請選擇</option>
+<option value="1">社交性高：活潑熱情、健談喜言、樂於與人群互動、人際層面廣泛。</option>
+<option value="2">親和性高：熱心，溫和，利他主義，關懷同情他人，幫助他人，追求和諧。</option>
+<option value="3">情緒穩定：心平氣和情緒穩定，溫和安定安然自在，面對現實意志堅定，心情不易動搖</option>
+<option value="3">勇悍高：願意面對問題，勇敢無懼，努力解決困難。</option>
+</select>
+</td>
+<td><input type="number" name="quantity" min="5" max="100" step="5"></td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row block" id="18" style="">
+<div class="col-lg-12 page-header text-center">
+<h3>18. 本系學群學類歸屬之適當性：本系目前歸屬OO學群(跨 OO學群)OO學類，</h3>
+<!-- flieUpload START -->
+<div class="text-center">
+
+<!-- flieUpload END -->
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-6 col-lg-offset-3 table-responsive">
+<form>
+<input type="radio" name="adjust" value="0">學群學類歸屬適當，無須調整。<br>
+<input type="radio" name="adjust" value="1">建議學群學類歸屬如下（請續答以下兩項）<br>
+</form>
+</div>
+</div>
+</div>
+<div class="row block" id="18-1" style="">
+<div class="col-lg-12 page-header text-center">
+<h3>18-1. 本系建議歸屬學類如下：</h3>
+<!-- flieUpload START -->
+<div class="text-center">
+<!-- flieUpload END -->
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-8 col-lg-offset-2 table-responsive">
+<form action="">
+			<div class="form-group">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>學群</th>
+							<th>學類</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><select class="form-control">
+								<option value="">請選擇</option>
+								<option value="1">資訊學群</option>
+								<option value="2">數理化學群</option>
+								<option value="3">工程學群</option>
+								<option value="4">醫藥衛生學群</option>
+								<option value="5">生命科學學群</option>
+								<option value="5">生物資源學群</option>
+								<option value="5">地球與環境學群</option>
+								<option value="5">地球與環境學群</option>
+								<option value="5">地球與環境學群</option>
+								<option value="5">地球與環境學群</option>
+								<option value="5">地球與環境學群</option>
+								<option value="5">地球與環境學群</option>
+							</select>
+						</td>
+						<td><select class="form-control">
+							<option value="">請選擇</option>
+							<option value="1">資訊管理學類</option>
+							<option value="2">資訊工程學類</option>
+							<option value="3">資訊科學學類</option>
+						</select>
+					</td>
+					<tr>
+						<td>上列均無符合本系之學類，建議新增學類，名稱如下：</td>
+						<td data-name="name"><input type="text" name="class" placeholder="填入學類名稱，以六個字為限。" class="form-control"/></td>
+					</tr>
+</tbody>
+</table>
+</div>
+<div class="form-group">
+								<textarea class="form-control" rows="10" placeholder="若學類異動，請說明異動之原因與理由，有相關之補充內容可以PDF檔上傳。"></textarea>
+<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">上傳</button>
+										</span>
+										<input type="text" class="form-control" placeholder="有相關之補充內容PDF
+檔上傳。"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							
+							</div>
+</form>
+</div>
+</div>
+</div>
+<div class="row block" id="18-1" style="">
+<div class="col-lg-12 page-header text-center">
+<h3>18-2.本系建議歸屬學群如下：</h3>
+<!-- flieUpload START -->
+<div class="text-center">
+<!-- flieUpload END -->
+</div>
+</div>
+<div class="row clearfix">
+<div class="col-lg-8 col-lg-offset-2 table-responsive">
+<form action="">
+			<div class="form-group">
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>學群</th>
+							<th>學類</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>本系建議歸屬學群如下：</td>
+						<td><select class="form-control">
+							<option value="">請選擇</option>
+							<option value="1">資訊管理學類</option>
+							<option value="2">資訊工程學類</option>
+							<option value="3">資訊科學學類</option>
+						</select>
+					</td>
+					<tr>
+						<td>除以上學群外，本系建議增加一個跨學群如下：</td>
+						<td><select class="form-control">
+							<option value="">請選擇</option>
+							<option value="1">資訊管理學類</option>
+							<option value="2">資訊工程學類</option>
+							<option value="3">資訊科學學類</option>
+						</select>
+					</td>
+					</tr>
+</tbody>
+</table>
+</div>
+<div class="form-group">
+								<textarea class="form-control" rows="10" placeholder="若學類異動，請說明異動之原因與理由，有相關之補充內容可以PDF檔上傳。"></textarea>
+<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">上傳</button>
+										</span>
+										<input type="text" class="form-control" placeholder="有相關之補充內容PDF
+檔上傳。"/>
+										<span class="input-group-btn">
+											<button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+							
+							</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Show more content function -->
+<script src="js/content.js"></script>
+<script src="js/return_to_top.js"></script>
+</section>
+<!--
+<div class="well"> </div>  空白橫條 -->
 <!-- 底下footer-->
 <footer class="text-center">
-      <div class="container">
-    <div class="row">
-          <div class="col-xs-12"> <br>
-        <br>
-        <img src="image/logo.png" width="213" height="24" alt="大學入學考試中心"/> </div>
-        </div>
-  </div>
-    </footer>
+<div class="container">
+<div class="row">
+<div class="col-xs-12"> <br>
+<br>
+<img src="image/logo.png" width="213" height="24" alt="大學入學考試中心"/> </div>
+</div>
+</div>
+</footer>
 <!-- / FOOTER -->
-
 <script type="text/javascript">
 $(function() {
-	$( "#Button1" ).button(); 
+	$( "#Button1" ).button();
 });
 </script>
+<!-- 檔案上傳js -->
+<script src="js/fileUpload.js"></script>
+<!-- Matrix 表格 -->
+<script src="js/survey.js"></script>
 </body>
 </html>
