@@ -8,6 +8,7 @@
 
 
 	<!-- Bootstrap -->
+		
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:300">
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
@@ -26,7 +27,6 @@
 		
 		<script src="js/table.js"></script>
 		
-			
 		
     <style>
 .fa-2x {
@@ -292,13 +292,13 @@ i {
 				</div>
 
 				  <!-- FileUpload Start-->
-				  <form method="POST" action="#" enctype="multipart/form-data">
+		<form method="POST" action="#" enctype="multipart/form-data">
 		<div class="form-group">
-			<div class="input-group input-file" name="Fichier1">
+			<div class="input-group input-file" name="Fichier1" >
 				<span class="input-group-btn">
 					<button class="btn btn-default btn-choose" type="button">圖1</button>
 				</span>
-				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
 				<span class="input-group-btn">
 					 <button class="btn btn-warning btn-reset" type="button">清除</button>
 				</span>
@@ -333,7 +333,7 @@ i {
 				<span class="input-group-btn">
 					<button class="btn btn-default btn-choose" type="button">圖1</button>
 				</span>
-				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
 				<span class="input-group-btn">
 					 <button class="btn btn-warning btn-reset" type="button">清除</button>
 				</span>
@@ -346,7 +346,7 @@ i {
 				<span class="input-group-btn">
 					<button class="btn btn-default btn-choose" type="button">圖2</button>
 				</span>
-				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
 				<span class="input-group-btn">
 					 <button class="btn btn-warning btn-reset" type="button">清除</button>
 				</span>
@@ -359,7 +359,7 @@ i {
 				<span class="input-group-btn">
 					<button class="btn btn-default btn-choose" type="button">圖3</button>
 				</span>
-				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
 				<span class="input-group-btn">
 					 <button class="btn btn-warning btn-reset" type="button">清除</button>
 				</span>
@@ -372,7 +372,7 @@ i {
 				<span class="input-group-btn">
 					<button class="btn btn-default btn-choose" type="button">圖4</button>
 				</span>
-				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
 				<span class="input-group-btn">
 					 <button class="btn btn-warning btn-reset" type="button">清除</button>
 				</span>
@@ -385,7 +385,7 @@ i {
 				<span class="input-group-btn">
 					<button class="btn btn-default btn-choose" type="button">圖5</button>
 				</span>
-				<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
 				<span class="input-group-btn">
 					 <button class="btn btn-warning btn-reset" type="button">清除</button>
 				</span>
@@ -442,7 +442,7 @@ i {
 
     <div class="row clearfix">
     	<div class="col-md-12 table-responsive">
-			<table class="table table-bordered table-hover table-sortable" id="tab_logic">
+			<table class="table  table-hover table-sortable" id="tab_logic">
 				<thead>
 					<tr >
 						<th class="text-center">
@@ -509,13 +509,13 @@ i {
 			</div>
 			<div class="text-center">
 				
-			  <form>
+	<form>
 
 		<div class="row clearfix">
     	<div class="col-md-12 table-responsive">
-			<table class="table table-bordered table-hover table-sortable" >
+			<table class="table table-hover table-sortable" id="tab_logic2" style="">
 				<thead>
-					<tr >
+					<tr>
 						<th class="text-center">
 							領域
 						</th>
@@ -537,7 +537,7 @@ i {
 						    <input type="text" name="class" placeholder="Class" class="form-control"/>
 						</td>
                         <td data-name="del">
-                            <button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
+                            <button name="del0" class="btn btn-danger">刪除</button>
                         </td>
 					</tr>
 				</tbody>
@@ -566,7 +566,7 @@ i {
 
 		<div class="row clearfix">
     	<div class="col-md-12 table-responsive">
-			<table class="table table-bordered table-hover table-sortable" >
+			<table class="table   table-hover table-sortable" >
 				<thead>
 					<tr >
 						<th class="text-center">
@@ -593,7 +593,20 @@ i {
 						    <input type="text" name="class" placeholder="Class" class="form-control"/>
 						</td>
 						<td data-name="name">
-							<input type="text" name="class" placeholder="Class" class="form-control"/>
+							<!-- File Upload-->
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+										<span class="input-group-btn">
+											 <button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
 						 	
 						</td>
                         <td data-name="del">
@@ -625,17 +638,22 @@ i {
 
 		<div class="row clearfix">
     	<div class="col-md-12 table-responsive">
-			<table class="table table-bordered table-hover table-sortable" >
+			<table class="table   table-hover table-sortable" >
 				<thead>
 					<tr >
 						<th class="text-center">
-							課程名稱
+							行職大類
 						</th>
 						<th class="text-center">
-							內容、特色
+							中類</th>
+						<th class="text-center">
+						 	職業說明
 						</th>
 						<th class="text-center">
-						 	上傳檔案
+						 	勾選
+						</th>
+						<th class="text-center">
+						 	代表性評分(1-20)
 						</th>
 						<th class="text-center">
 						 	#
@@ -651,9 +669,17 @@ i {
 						<td data-name="class">
 						    <input type="text" name="class" placeholder="Class" class="form-control"/>
 						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
+						</td>
 						<td data-name="name">
-							<input type="text" name="class" placeholder="Class" class="form-control"/>
+							<div class="checkbox">
+								  <label><input type="checkbox" value=""></label>
+								</div>
 						 	
+						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
 						</td>
                         <td data-name="del">
                             <button name="del0" class="btn btn-danger glyphicon glyphicon-remove row-remove"></button>
@@ -677,25 +703,47 @@ i {
 			  <h3>8. 請向高中生列舉三至五項本系學生畢業後最適合從事的工作名稱，並簡要說明該項工作之內容。 
 </h3>
 			</div>
-			<div class="text-center">
+			<form>
+
+		<div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table   table-hover table-sortable" id="" >
+				<thead>
+					<tr >
+						<th class="text-center">
+							工作名稱
+						</th>
+						<th class="text-center">
+							說明
+						</th>
+						<th class="text-center">
+						 	#
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="class">
+						    <input type="text" name="class" placeholder="Class" class="form-control"/>
+						</td>
+                        <td data-name="del">
+                            <button name="del0" class="btn btn-danger">刪除</button>
+                        </td>
+					</tr>
+				</tbody>
 				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
+			</table>
+			<a class="btn btn-default pull-right">Add Row</a>
+		
+		</div>
+	</div>
 
 
 			  </form>
-
-        </div>
   </div>
 	
 	<div class="row block" id="9" style="">
@@ -703,25 +751,75 @@ i {
 			  <h3>9.請於本系畢業同學中選出在相關領域從事最具代表性職業或表現最傑出之系友三至五位，以文字簡要說明個人之學經歷及生涯發展歷程，並請提供系友照片或相關圖檔。
 </h3>
 			</div>
-			<div class="text-center">
+			<form>
+
+		<div class="row clearfix">
+    	<div class="col-md-12 table-responsive">
+			<table class="table   table-hover table-sortable" id="" >
+				<thead>
+					<tr >
+						<th class="text-center">
+							姓名
+						</th>
+						<th class="text-center">
+							學、經歷
+						</th>
+						<th class="text-center">
+							生涯發展
+						</th>
+						<th class="text-center">
+							上傳檔案
+						</th>
+						<th class="text-center">
+						 	#
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="name">
+							<input type="text" name="class" placeholder="Class" class="form-control"/>
+						 	
+						</td>
+						<td data-name="class">
+						   <!-- File Upload-->
+							<form method="POST" action="#" enctype="multipart/form-data">
+								<div class="form-group">
+									<div class="input-group input-file" name="Fichier1">
+										<span class="input-group-btn">
+											<button class="btn btn-default btn-choose" type="button">圖1</button>
+										</span>
+										<input type="text" class="form-control" placeholder="點擊左方上傳"/>
+										<span class="input-group-btn">
+											 <button class="btn btn-warning btn-reset" type="button">清除</button>
+										</span>
+									</div>
+								</div>
+							</form>
+						 	
+						</td>
+                        <td data-name="del">
+                            <button name="del0" class="btn btn-danger">刪除</button>
+                        </td>
+					</tr>
+				</tbody>
 				
-			  <form>
-				<div class="form-group">
-				  <textarea class="form-control" rows="10" ></textarea>
-
-				</div>
-
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
+			</table>
+			<a class="btn btn-default pull-right">Add Row</a>
+		
+		</div>
+	</div>
 
 
 			  </form>
-
-        </div>
   </div>
 	
 	<div class="row block" id="10" style="">
@@ -736,14 +834,21 @@ i {
 
 				</div>
 
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
+				  <!-- flieUpload START -->
+	<form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖1</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+<!-- flieUpload END -->
 			  </form>
 
         </div>
@@ -761,14 +866,21 @@ i {
 
 				</div>
 
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
-
+				  <!-- flieUpload START -->
+	<form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖1</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+<!-- flieUpload END -->
 			  </form>
 
         </div>
@@ -786,13 +898,21 @@ i {
 
 				</div>
 
-				  <div class="fileupload fileupload-new" data-provides="fileupload">
-				<span class="btn btn-primary btn-file"><span class="fileupload-new">檔案上傳</span>
-				<span class="fileupload-exists">更改檔案</span>         <input type="file" /></span>
-				<span class="fileupload-preview"></span>
-				<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
-			  </div>
-
+				   <!-- flieUpload START -->
+	<form method="POST" action="#" enctype="multipart/form-data">
+		<div class="form-group">
+			<div class="input-group input-file" name="Fichier1">
+				<span class="input-group-btn">
+					<button class="btn btn-default btn-choose" type="button">圖1</button>
+				</span>
+				<input type="text" class="form-control" placeholder="點擊上傳"/>
+				<span class="input-group-btn">
+					 <button class="btn btn-warning btn-reset" type="button">清除</button>
+				</span>
+			</div>
+		</div>
+	</form>
+<!-- flieUpload END -->
 
 			  </form>
 
